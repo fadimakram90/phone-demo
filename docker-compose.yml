@@ -1,0 +1,17 @@
+version: "3"
+services:
+  backend:
+    build: .
+    image: "phone-demo-backend"
+    container_name: "backend"
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build: web/phone-web-demo
+    image: "phone-demo-frontend"
+    container_name: "frontend"
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
