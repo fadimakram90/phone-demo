@@ -13,6 +13,9 @@
 - Filter by country and phone validation status
 - Pagination
 
+## Backend Unit Tests:
+- Find all unit tests in ```com.demo.phone.PhoneDemoApplicationTests```
+
 ## Ports Used: 
 - Backend Port: 8080
 - HTTP Port: 80
